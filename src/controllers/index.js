@@ -1,0 +1,1 @@
+exports.telemetricController = require('./telemetrics')
