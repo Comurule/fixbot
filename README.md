@@ -24,7 +24,7 @@ git clone https://github.com/Comurule/fixbot.git
 cd fixbot
 ```
 
-* Create .env file for environmental variables in your root directory like the __.env.sample__ file and provide the keys 
+* Create .env file for environmental variables in your root directory like the __.env.sample__ file and provide the mongo database uri 
 
 * Install all dependencies using this command(in your Command Line)
 ```
