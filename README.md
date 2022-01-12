@@ -39,7 +39,7 @@ npm start
 * Check the port on the specified port on the env or 8080
 
 ### API End Points ###
-The Endpoints documentation can be gotten in [this Postman documentation](https://documenter.getpostman.com/view/11194465/UVJhDEyo).
+The Endpoints documentation can be gotten in [this Postman documentation](https://documenter.getpostman.com/view/11194465/UVXgNJHx).
 
 ### Recommended Improvements
 - More input valdation and Error handling
