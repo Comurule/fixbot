@@ -17,19 +17,19 @@ app.use(express.urlencoded({ extended: false }))
 app.use(routes)
 
 // Application Level Error Handling
-app.use(errorHandler)
+app.use((err, req, res, next) => errorHandler(err, req, res))
 
 // DB connect
 logger.info('[Wait!]:::Connecting to Database...')
 connectToDB(databaseUrl)
-	.then(async () => {
-		logger.info('Connected to Database...')
+  .then(async () => {
+    logger.info('Connected to Database...')
 
-		app.listen(port, () => {
-			logger.info(`App is running and listening on Port: ${port}`)
-		})
-	})
-	.catch((error) => {
-		logger.error(error)
-		process.exit(0)
-	})
+    app.listen(port, () => {
+      logger.info(`App is running and listening on Port: ${port}`)
+    })
+  })
+  .catch((error) => {
+    logger.error(error)
+    process.exit(0)
+  })
